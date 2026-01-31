@@ -100,3 +100,4 @@ def get_token(auth_code):
         "refresh_token": data.get("refresh_token", "No refresh token returned"),
         "expires_at": time.time() + data.get("expires_in", 3600)
     }
+
